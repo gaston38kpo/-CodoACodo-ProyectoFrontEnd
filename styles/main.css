@@ -45,6 +45,7 @@ a, a:link, a:visited {
     background-color: #2E57C7;
     width: 100vw;
     height: 100vh;
+    overflow: scroll;
 }
 
 .tituloHome {
