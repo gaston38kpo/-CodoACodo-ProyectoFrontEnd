@@ -89,6 +89,7 @@ input+div {
 }
 .userInput:focus {
     background-color: white;
+    color: black;
     border: 2px solid #002036;
     outline: 0;
 }
