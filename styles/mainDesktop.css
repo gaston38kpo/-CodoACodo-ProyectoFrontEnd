@@ -18,15 +18,40 @@ a {
 
 /* ----Todo dentro del BODY---- */
 
-/* ----Header(TaskBar)---- */
+/* ----Iconos escritorio---- */
 nav {
     display: flex;
     flex-direction: column;
     width: 110px;
-    /* background-color: #fff; */
 }
 
 
 .taskbarBox a div{
     margin-bottom: 20px;
+}
+
+.fa-trash {
+    color: #E5EBEE;
+    margin-top: 10px;
+    text-shadow: 0 0 2px black;
+}
+
+.fa-desktop {
+    color: #868E95;
+    text-shadow: 0 0 2px black;
+}
+
+.fa-folder-open {
+    color: #FED36C;
+    text-shadow: 0 0 2px black;
+}
+
+.fa-edge {
+    color: #30BEDD;
+    text-shadow: 0 0 2px black;
+}
+
+.fa-facebook-messenger {
+    color: #0098F6;
+    text-shadow: 0 0 2px black;
 }
