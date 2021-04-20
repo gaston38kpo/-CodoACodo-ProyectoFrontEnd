@@ -1,22 +1,142 @@
 /* ----GLOBAL---- */
-* {
-    margin: 0;
-    font-family: sans-serif;
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+* {margin: 0;}
+html {
+    height: 100%;
+    box-sizing: border-box;
 }
 body {
     background-image: url(../img/wallpaperLoginScreenHD.jpg);
     background-size: cover;
     background-position: center;
+    
     height: 100vh;
+    width: 100vw;
     display: flex;
-    flex-direction: column;
-    font-size: clamp(.7rem, min(2.5vh, 2.5vw), 1rem);
+    justify-content: center;
+    align-items: center;
+    
+    font-family: sans-serif;
+    /* font-size: clamp(.7rem, min(2.5vh, 2.5vw), 1rem); */
+    color: white;
+    text-align: center;
 }
 a {
     text-decoration: none;
     color: white;
+    text-shadow: 1px 1px 2px black;
+    transition: font-size .2s ease;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: white;
+}
+h1 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 100;
+    text-shadow: 1px 1px 3px black;
+}
+i {
+    text-shadow: 2px 3px black;
 }
 
-/* ----Todo dentro del BODY---- */
+    /* ----Todo dentro del BODY---- */
 
-/* ----Header(TaskBar)---- */
+    /* ----Main---- */
+/* Zona de login */
+main {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 0 10px;
+}
+
+form div {
+    display: flex;
+    align-items: stretch;
+}
+
+input {
+    /* margin: 3px 0; */
+    height: 35px;
+}
+
+input+div {
+    margin: 3px 0;
+}
+
+
+/* Zona de inputs */
+.userInput {
+    /* Nombre usuario */
+    background-color: #002036;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+
+    width: 100%;
+    margin-bottom: 5px;
+    transition: 
+        background-color .2s ease, 
+        border-color .2 ease;
+}
+.userInput:focus {
+    background-color: white;
+    border: 2px solid #002036;
+    outline: 0;
+}
+
+.passInput {
+    /* Contraseña */
+    background-color: #002036;
+    color: white;
+
+    width: 90%;
+    margin-right: 0;
+    border: 2px solid white;
+    border-right: 1px solid white;
+    border-radius: 4px 0 0 4px;    
+}
+.passInput:disabled {
+    background-color: #283944;
+    cursor: not-allowed;
+}
+
+.btnSubmit {
+    /* Boton */
+    width: 10%;
+    min-width: 40px;
+
+    color: white;
+    border: 2px solid white;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #266184;
+}
+
+.btnSubmit:hover {
+    cursor: pointer;
+}
+
+/* Zona de opciones adicionales */
+.login-options {
+    margin-top: 6vh;
+}
+
+.login-options a{
+    font-size: 1.4rem;
+}
+@media only screen and (min-width: 480px) {
+    .login-options a{
+        font-size: 1rem;
+    }
+    input {
+        height: 30px;
+    }
+}
