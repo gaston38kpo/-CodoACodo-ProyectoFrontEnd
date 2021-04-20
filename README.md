@@ -1,2 +1,2 @@
 # gaston38kpo.github.io
-mi primera pagina web
+Proyecto web para Codo a Codo basado en una interfaz de sistema operativo simulada.
