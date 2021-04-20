@@ -4,19 +4,29 @@
     font-family: sans-serif;
 }
 body {
-    background-image: url(../img/wallpaperLoginScreenHD.jpg);
+    background-image: url(../img/wallpaperDesktopHD.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
     font-size: clamp(.7rem, min(2.5vh, 2.5vw), 1rem);
+    text-align: center;
 }
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 /* ----Todo dentro del BODY---- */
 
 /* ----Header(TaskBar)---- */
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+    background-color: #fff;
+}
+
+
+.taskbarBox a div{
+    margin-bottom: 20px;
+}

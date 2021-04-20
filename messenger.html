@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/mainMessenger.css" />
+    <title>Proyecto - Codo a Codo</title>
+  </head>
+  <body>
+    <header class="tittleZone">
+      <!-- Cabecera con titulo e icono de FAQ -->
+      <h1>
+        Iniciar sesi&oacute;n en <br />
+        Proyecto <b>Codo a Codo</b>
+      </h1>
+      <a href="#"><i class="fas fa-question-circle fa-2x"></i></a>
+    </header>
+    
+    <!-- CUERPO CON AVATAR Y LOGIN -->
+    <section class="bodyAvatar-and-Login">
+      <!-- AVATAR -->
+      <article class="avatar"><img src="./img/marco-avatar.png" alt="Avatar" /></article>
+
+      <article class="inicioDeSesion">
+        <!-- ZONA DE INICIO DE SESION -->
+        <form action="" method="POST">
+
+          <!-- Ingreso de email y contraseña -->
+          <input type="email" name="correo" size="35" class="dataInput" placeholder="ejemplo555@supermail.com" required="required" autofocus>
+          <br />
+          <input type="password" name="clave" size="35" class="dataInput" placeholder="Contrase&ntilde;a" required="required">
+          <br />
+
+          <!-- OPCIONES ADICIONALES DE INICIO DE SESION -->
+          <a class="passwordOlvidado" href="#" target="_blank">¿Has olvidado tu contrase&ntilde;a?</a>
+          <br />
+
+          <!-- Estado a mostrar al iniciar sesion -->
+          <label for="estado" class="estado">Iniciar sesi&oacute;n como: </label><i class="fas fa-minus-square"></i>
+          <select id="estado" name="estado" class="estado">            
+            <option value="disponible">Disponible</option>
+            <option value="desconectado">Ausente</option>
+            <option value="ocupado">Ocupado</option>
+            <option value="desconectado">Aparecer sin conexión</option>            
+          </select>
+          <br />
+
+          <!-- Botones para guardar los datos (id y password) y/o elegir si se desea iniciar automaticamente -->
+          <input type="checkbox" name="recordar-id" id="recordar-id" class="checkbox"><label class="checkboxLabel" for="recordar-id">Recordar mi Id. y contrase&ntilde;a</label>
+          <br />
+          
+          <input type="checkbox" name="auto-login" id="auto-login" class="checkbox" disabled><label class="checkboxLabel" for="auto-login">Iniciar sesi&oacute;n autom&aacute;ticamente <a href="#">Opciones</a></label>
+          <br />          
+
+          <!-- Botones de inicio de sesion -->
+          <input type="submit" value="Iniciar Sesi&oacute;n" id="btnSubmit">
+          <input type="reset" value="Cancelar" id="btnCancel">
+        </form>
+
+        <p class="registrarse">No tienes un ID de ProyectoCaC? <a href="#">Registrarse</a></p>
+
+      </article>
+    </section>
+
+    <footer class="footerIndex" id="contact">
+      <a href="#">Contactenos</a>
+      <p><strong>Hecho por Gaston Ezequiel Giacobini - Proyecto Codo a Codo Full Stack Python.</strong></p>
+      <a href="#">Acerca de</a>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./mainMessenger.js"></script>
+  </body>  
+</html>

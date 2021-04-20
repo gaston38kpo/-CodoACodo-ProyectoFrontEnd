@@ -1,0 +1,60 @@
+/* ----GLOBAL---- */
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    /* font-size: clamp(.7rem, min(2.5vh, 2.5vw), 1rem); */
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ----Todo dentro del BODY---- */
+
+/* ----Header(TaskBar)---- */
+.taskbar {
+    background-color: #002C4F;
+}
+
+.taskbarBox {
+    display: flex;
+}
+
+.taskbarBox div{
+    padding: clamp(8px, 3vw, 15px);
+}
+
+.taskbarBox div:hover {
+    background-color: #1D4160;
+}
+
+.taskbarBox div:active {
+    background-color: #0D3858;
+}
+
+.fa-edge {
+    color: #30BEDD;
+}
+
+.fa-facebook-messenger {
+    color: #0098F6;
+}
+
+.clock {
+    margin-left: auto;
+}
+.fa-clock {
+    color: antiquewhite;
+}
+
+/* ----iFrame---- */
+
+iframe {
+    height: 100vh;
+    overflow: hidden;
+}

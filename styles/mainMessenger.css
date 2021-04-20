@@ -1,0 +1,153 @@
+/* ----GLOBAL---- */
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+body {
+    background: linear-gradient(to bottom, #33C0E3, white 30vh);
+    background-repeat: repeat-x;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(.7rem, min(2.5vh, 2.5vw), 1rem);
+}
+a {
+    text-decoration: none;
+    color: rgb(24, 95, 167)
+}
+a:visited {
+    color: rgb(24, 95, 167)
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* ----Todo dentro del BODY---- */
+
+/* ----Header---- */
+.tittleZone {
+    display: flex;
+    height: 25vh;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.tittleZone h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: normal;
+    font-size: 3.9em;
+    margin: -5px 0 0 0;
+    padding-left: 32px;
+}
+
+.tittleZone h1 b {
+    font-family: 'Open Sans Condensed', sans-serif;
+    word-spacing: -8px;
+    letter-spacing: -3px;
+}
+
+.tittleZone a {
+    color: #0f2faf;
+    margin: 16px 16px 0 0;
+    align-self: flex-end;
+}
+
+/* ----Body---- */
+/* AVATAR */
+.avatar {
+    width: auto;
+    height: auto;
+    max-width: 114px;
+    max-height: 114px;
+    margin-right: 10px;
+}
+
+.bodyAvatar-and-Login{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    height: 65vh;
+}
+
+/* LOGIN */
+.inicioDeSesion {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inicioDeSesion form * {
+    margin: 5px auto;
+}
+
+.dataInput {
+    height: 25px;
+}
+
+/* LOGIN OPCIONES ADICIONALES */
+#estado {
+    /* appearance: none; */
+    margin: 16px 0;
+    border: none;
+}
+
+select {
+    border: none;
+}
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 2px;
+    right: 3px;
+}
+
+#btnSubmit, #btnCancel {
+    margin: 16px 5px;
+    padding: 5px 10px;
+}
+
+.registrarse{
+    margin-top: 6px;
+}
+
+/* Footer */
+footer.footerIndex {
+    /* border: 1px dashed red; */
+    height: 10%;
+    width: 100%;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    font-size: .8em;
+    color: #4b4b4b;
+}
+
+footer a {
+    color: #4b4b4b;
+}
+
+footer a:visited {
+    color: #4b4b4b;
+}
+
+
+    /* MEDIA QUERYS */
+/* Móviles: entre 320 y 480 píxeles.
+Tablets: entre 768 y 1024 píxeles.
+Pantallas grandes: más de 1200 píxeles. */
+
+@media only screen and (max-device-width : 480px) {
+    body {
+        background: linear-gradient(to bottom, red, white 30vh);
+        background-repeat: repeat-x;
+    }
+}
+@media only screen and (min-device-width : 481px) and (max-device-width : 1024px) {
+    body {
+        background: linear-gradient(to bottom, yellow, white 30vh);
+    }
+}
