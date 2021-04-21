@@ -32,13 +32,12 @@ nav {
 .taskbarBox a div{
     margin-bottom: 20px;
 }
-
-.wShadow {
-    text-shadow: 0 0 2px white;
+.taskbarBox p {
+    color: white;
 }
 
-.bShadow {
-    text-shadow: 0 0 2px black;
+.Shadow {
+    text-shadow: 0 0 1px black;
 }
 
 .fa-trash {
