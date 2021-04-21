@@ -2,12 +2,13 @@
 * {
     margin: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 body {
     height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column-reverse;
-    /* font-size: clamp(.7rem, min(2.5vh, 2.5vw), 1rem); */
 }
 a {
     text-decoration: none;
@@ -26,7 +27,9 @@ a {
 }
 
 .taskbarBox div{
-    padding: clamp(8px, 3vw, 15px);
+    padding: clamp(8px, 3vw, 11px);
+    padding-left: 17px;
+    padding-right: 17px;
 }
 
 .taskbarBox div:hover {
