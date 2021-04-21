@@ -7,8 +7,10 @@ body {
     background-image: url(../img/wallpaperDesktopHD.jpg);
     background-size: cover;
     background-position: center;
+
+    display: flex;
     height: 100vh;
-    font-size: clamp(.7rem, min(2.5vh, 2.5vw), 1rem);
+    /* font-size: clamp(.7rem, min(2.5vh, 2.5vw), 1rem); */
     text-align: center;
 }
 a {
@@ -22,6 +24,7 @@ a {
 nav {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     width: 110px;
 }
 
@@ -30,28 +33,42 @@ nav {
     margin-bottom: 20px;
 }
 
+.wShadow {
+    text-shadow: 0 0 2px white;
+}
+
+.bShadow {
+    text-shadow: 0 0 2px black;
+}
+
 .fa-trash {
     color: #E5EBEE;
     margin-top: 10px;
-    text-shadow: 0 0 2px black;
 }
 
 .fa-desktop {
     color: #868E95;
-    text-shadow: 0 0 2px black;
 }
 
 .fa-folder-open {
     color: #FED36C;
-    text-shadow: 0 0 2px black;
 }
 
 .fa-edge {
     color: #30BEDD;
-    text-shadow: 0 0 2px black;
 }
 
 .fa-facebook-messenger {
     color: #0098F6;
-    text-shadow: 0 0 2px black;
+}
+
+.agradecimiento {
+    align-items: flex-end;
+    margin: auto 0 0 auto;
+    color: whitesmoke;
+    text-shadow: 0 0 2px black;    
+}
+
+.agradecimiento a {
+    color: goldenrod;
 }
