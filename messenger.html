@@ -10,7 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/hint.min.css">
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/mainMessenger.css" />
     <title>Proyecto - Codo a Codo</title>
@@ -18,17 +17,17 @@
   <body>
     <header class="tittleZone">
       <!-- Cabecera con titulo e icono de FAQ -->
-      <h1 class="hint--left hint--error hint--medium" aria-label="Es un titulo ficticio (a que te lo creiste we)">
+      <h1 title="Es un titulo ficticio (a que te lo creiste we)">
         Iniciar sesi&oacute;n en <br />
         Proyecto <b>Codo a Codo</b>
       </h1>
-      <a href="#" class="hint--bottom-left hint--info" aria-label="Ir a la seccion de ayuda"><i class="fas fa-question-circle fa-2x"></i></a>
+      <a href="#" title="Ir a la seccion de ayuda"><i class="fas fa-question-circle fa-2x"></i></a>
     </header>
     
     <!-- CUERPO CON AVATAR Y LOGIN -->
     <section class="bodyAvatar-and-Login">
       <!-- AVATAR -->
-      <article class="avatar hint--bottom hint--warning" aria-label="Solo es un .png"><img src="./img/marco-avatar.png" alt="Avatar" /></article>
+      <article class="avatar" title="Solo es un .png"><img src="./img/marco-avatar.png" alt="Avatar" /></article>
 
       <article class="inicioDeSesion">
         <!-- ZONA DE INICIO DE SESION -->
@@ -41,11 +40,11 @@
           <br />
 
           <!-- OPCIONES ADICIONALES DE INICIO DE SESION -->
-          <a class="passwordOlvidado hint--bottom hint--info" aria-label="Restablecer la contraseña" href="#" target="_blank">¿Has olvidado tu contrase&ntilde;a?</a>
+          <a class="passwordOlvidado" title="Restablecer la contrase&ntilde;a" href="#" target="_blank">¿Has olvidado tu contrase&ntilde;a?</a>
           <br />
 
           <!-- Estado a mostrar al iniciar sesion -->
-          <label for="estado" class="estado hint--bottom hint--info" aria-label="lorem">Iniciar sesi&oacute;n como: </label><i class="fas fa-minus-square"></i>
+          <label for="estado" class="estado" title="Opciones de inicio de sesi&oacute;n">Iniciar sesi&oacute;n como: </label><i class="fas fa-square"></i>
           <select id="estado" name="estado" class="estado">            
             <option value="disponible">Disponible</option>
             <option value="desconectado">Ausente</option>
@@ -58,15 +57,15 @@
           <input type="checkbox" name="recordar-id" id="recordar-id" class="checkbox"><label class="checkboxLabel" for="recordar-id">Recordar mi Id. y contrase&ntilde;a</label>
           <br />
           
-          <input type="checkbox" name="auto-login" id="auto-login" class="checkbox" disabled><label class="checkboxLabel" for="auto-login">Iniciar sesi&oacute;n autom&aacute;ticamente <a class="hint--bottom hint--medium hint--info" aria-label="Cambiar opciones de inicio de sesi&oacute;n y de inicio" href="#">Opciones</a></label>
+          <input type="checkbox" name="auto-login" id="auto-login" class="checkbox" disabled><label class="checkboxLabel" for="auto-login">Iniciar sesi&oacute;n autom&aacute;ticamente <a title="Cambiar opciones de inicio de sesi&oacute;n y de inicio" href="#">Opciones</a></label>
           <br />          
 
           <!-- Botones de inicio de sesion -->
-          <input type="submit" value="Iniciar Sesi&oacute;n" id="btnSubmit">
-          <input type="reset" value="Cancelar" id="btnCancel">
+          <input type="submit" value="Iniciar Sesi&oacute;n" id="btnSubmit" title="Welcome back to 2011!">
+          <input type="reset" value="Cancelar" id="btnCancel" title="Resetear todos los campos">
         </form>
 
-        <p class="registrarse">No tienes un ID de ProyectoCaC? <a class="hint--bottom hint--info" aria-label="Permite suscribirse al Proyecto" href="#">Registrarse</a></p>
+        <p class="registrarse">No tienes un ID de ProyectoCaC? <a title="Permite suscribirse al Proyecto" href="#">Registrarse</a></p>
 
       </article>
     </section>

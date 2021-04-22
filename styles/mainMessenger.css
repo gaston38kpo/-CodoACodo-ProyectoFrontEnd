@@ -83,17 +83,26 @@ a:hover {
 
 .dataInput {
     height: 25px;
+    border-radius: 5px;
+    padding-left: 6px;
+    border: 1px solid #767676;
+}
+.dataInput:focus {
+    border: 1.1px solid black;
+    outline: 0;
 }
 
 /* LOGIN OPCIONES ADICIONALES */
+.fa-square {
+    color: #3EDD0F;
+    text-shadow: 0 0 1px black;
+}
+
 #estado {
     /* appearance: none; */
     margin: 16px 0;
     border: none;
-}
-
-select {
-    border: none;
+    width: 120px;
 }
 
 .checkbox {
@@ -140,7 +149,7 @@ footer a:visited {
 Tablets: entre 768 y 1024 píxeles.
 Pantallas grandes: más de 1200 píxeles. */
 
-@media only screen and (max-device-width : 480px) {
+@media only screen and (max-device-width : 320px) and (max-device-height: 480px) {
     body {
         background: linear-gradient(to bottom, red, white 30vh);
         background-repeat: repeat-x;
