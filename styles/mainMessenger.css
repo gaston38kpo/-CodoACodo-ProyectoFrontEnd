@@ -27,7 +27,7 @@ a:hover {
 /* ----Header---- */
 .tittleZone {
     display: flex;
-    height: 25vh;
+    /* height: 25vh; */
     flex-direction: column-reverse;
     justify-content: flex-end;
     align-items: center;
@@ -36,8 +36,8 @@ a:hover {
 .tittleZone h1 {
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: normal;
-    font-size: 3.9em;
-    margin: -5px 0 0 0;
+    font-size: 3.7em;
+    margin: 0 0 10px 0;
     padding-left: 32px;
 }
 
@@ -66,7 +66,7 @@ a:hover {
 .bodyAvatar-and-Login{
     display: flex;
     justify-content: center;
-    margin-top: 5vh;
+    /* margin-top: 5vh; */
     height: 65vh;
 }
 
@@ -104,6 +104,7 @@ a:hover {
     border: none;
     width: 120px;
 }
+
 
 .checkbox {
     width: 16px;
@@ -143,20 +144,163 @@ footer a:visited {
     color: #4b4b4b;
 }
 
+/*///////////////////////////////////////////////////////*/
+/*/////////////////// MEDIA QUERYS //////////////////////*/
+/*///////////////////////////////////////////////////////*/
 
-    /* MEDIA QUERYS */
-/* Móviles: entre 320 y 480 píxeles.
-Tablets: entre 768 y 1024 píxeles.
-Pantallas grandes: más de 1200 píxeles. */
-
-@media only screen and (max-device-width : 320px) and (max-device-height: 480px) {
+@media only screen and (max-width : 425px) {
     body {
-        background: linear-gradient(to bottom, red, white 30vh);
-        background-repeat: repeat-x;
+        display: block;
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    /* Titulo */
+    .tittleZone, #contact, .DesktopOnly, .fa-square, .TabletOnly {
+        display: none;
+    }
+    
+    /* Avatar */
+    .inicioDeSesion {
+        width: 100%;
+    }
+
+    .bodyAvatar-and-Login {
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .avatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        max-width: none;
+        max-height: none;
+    }
+    
+    .avatar img {
+        width: 40vw;
+        min-width: 114px;
+    }
+    /* Zona login */
+    .dataInput {
+        width: 85%;
+        height: 35px;
+    }
+
+    .passwordOlvidado {
+        font-size: 1.1rem;
+    }
+
+    #estado {
+        font-size: 1.2rem;
+        
+        padding: 5px;
+        margin: 10px 0;
+        width: min-content;
+
+        outline: 0;
+        border-radius: 50px;
+        border: 1px solid gray;
+    }
+
+    #estado * {
+        text-justify: center;
+    }
+
+    .checkbox {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .checkboxLabel, .registrarse {
+        font-size: 1.2rem;
+    }
+
+    #btnSubmit, #btnCancel {
+        display: block;
+        margin: 10px auto;
+        padding: 7px 12px;
+        width: 200px;
+        font-size: 1.2rem;
+    }
+
+    .registrarse {
+        border: 1px solid #A2A2A2;
+        background-color: #EFEFEF;
+        color: black;
+
+        width: 200px;
+        padding: 8px 0;
+        margin: 0 auto 0;
+    }
+
+    .registrarse:hover {
+        text-decoration: none;
+    }
+
+    .registrarse:visited {
+        color: black;
     }
 }
-@media only screen and (min-device-width : 481px) and (max-device-width : 1024px) {
+
+
+@media only screen and (min-width: 426px) and (max-width: 768px) { 
+    .MobileOnly, .DesktopOnly, footer p {
+        display: none;
+    }
+
     body {
-        background: linear-gradient(to bottom, yellow, white 30vh);
+        font-size: 1rem;
+    }
+
+    .tittleZone {
+        font-size: .8rem;
+        margin-bottom: 20px;
+    }
+
+    .avatar {
+        margin: 0 2vw 0 10px;
+    }
+    
+    form {
+        margin-left: 3vw;
+    }
+
+    .dataInput {
+        width: 85%;
+        height: 35px;
+    }
+
+    .checkbox {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .checkboxLabel {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .registrarse {
+        font-size: 1rem;
+        text-align: center;
+        margin: 0;
+    }
+    .registrarse a {
+        font-size: 1.2rem;
+    }
+
+    footer * {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 769px) { 
+    .MobileOnly, .TabletOnly {
+        display: none;
     }
 }

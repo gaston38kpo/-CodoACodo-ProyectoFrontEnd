@@ -44,7 +44,7 @@
           <br />
 
           <!-- Estado a mostrar al iniciar sesion -->
-          <label for="estado" class="estado" title="Opciones de inicio de sesi&oacute;n">Iniciar sesi&oacute;n como: </label><i class="fas fa-square"></i>
+          <label for="estado" class="estado DesktopOnly" title="Opciones de inicio de sesi&oacute;n">Iniciar sesi&oacute;n como: </label><i class="fas fa-square"></i>
           <select id="estado" name="estado" class="estado">            
             <option value="disponible">Disponible</option>
             <option value="desconectado">Ausente</option>
@@ -54,10 +54,14 @@
           <br />
 
           <!-- Botones para guardar los datos (id y password) y/o elegir si se desea iniciar automaticamente -->
-          <input type="checkbox" name="recordar-id" id="recordar-id" class="checkbox"><label class="checkboxLabel" for="recordar-id">Recordar mi Id. y contrase&ntilde;a</label>
+          <input type="checkbox" name="recordar-id" id="recordar-id" class="checkbox MobileOnly"><label class="checkboxLabel MobileOnly" for="recordar-id">Recordarme</label>
+          <input type="checkbox" name="recordar-id" id="recordar-id" class="checkbox TabletOnly"><label class="checkboxLabel TabletOnly" for="recordar-id">Recordar mi Id. y contrase&ntilde;a</label>
+          <input type="checkbox" name="recordar-id" id="recordar-id" class="checkbox DesktopOnly"><label class="checkboxLabel DesktopOnly" for="recordar-id">Recordar mi Id. y contrase&ntilde;a</label>
           <br />
           
-          <input type="checkbox" name="auto-login" id="auto-login" class="checkbox" disabled><label class="checkboxLabel" for="auto-login">Iniciar sesi&oacute;n autom&aacute;ticamente <a title="Cambiar opciones de inicio de sesi&oacute;n y de inicio" href="#">Opciones</a></label>
+          <input type="checkbox" name="auto-login" id="auto-login" class="checkbox MobileOnly" disabled><label class="checkboxLabel MobileOnly" for="auto-login">Iniciar autom&aacute;ticamente</label>
+          <input type="checkbox" name="auto-login" id="auto-login" class="checkbox TabletOnly" disabled><label class="checkboxLabel TabletOnly" for="auto-login">Iniciar sesi&oacute;n autom&aacute;ticamente <a title="Cambiar opciones de inicio de sesi&oacute;n y de inicio" href="#"><br />Opciones</a></label>
+          <input type="checkbox" name="auto-login" id="auto-login" class="checkbox DesktopOnly" disabled><label class="checkboxLabel DesktopOnly" for="auto-login">Iniciar sesi&oacute;n autom&aacute;ticamente <a title="Cambiar opciones de inicio de sesi&oacute;n y de inicio" href="#">Opciones</a></label>
           <br />          
 
           <!-- Botones de inicio de sesion -->
@@ -65,7 +69,9 @@
           <input type="reset" value="Cancelar" id="btnCancel" title="Resetear todos los campos">
         </form>
 
-        <p class="registrarse">No tienes un ID de ProyectoCaC? <a title="Permite suscribirse al Proyecto" href="#">Registrarse</a></p>
+        <a class="registrarse MobileOnly" title="Permite suscribirse al Proyecto" href="#">Registrarse</a>
+        <p class="registrarse TabletOnly">No tienes un ID de ProyectoCaC? <a title="Permite suscribirse al Proyecto" href="#"><br />Registrarse</a></p>
+        <p class="registrarse DesktopOnly">No tienes un ID de ProyectoCaC? <a title="Permite suscribirse al Proyecto" href="#">Registrarse</a></p>
 
       </article>
     </section>
