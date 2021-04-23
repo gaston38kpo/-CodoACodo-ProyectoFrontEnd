@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap"
@@ -15,73 +20,196 @@
     <title>Proyecto - Codo a Codo</title>
   </head>
   <body>
+    <!-- SECCION DE TODA LA CABECERA -->
     <header class="tittleZone">
       <!-- Cabecera con titulo e icono de FAQ -->
       <h1 title="Es un titulo ficticio (a que te lo creiste we)">
         Iniciar sesi&oacute;n en <br />
         Proyecto <b>Codo a Codo</b>
       </h1>
-      <a href="#" title="Ir a la seccion de ayuda"><i class="fas fa-question-circle fa-2x"></i></a>
+      <a href="#" title="Ir a la seccion de ayuda"
+        ><i class="fas fa-question-circle fa-2x"></i
+      ></a>
     </header>
-    
-    <!-- CUERPO CON AVATAR Y LOGIN -->
-    <section class="bodyAvatar-and-Login">
-      <!-- AVATAR -->
-      <article class="avatar" title="Solo es un .png"><img src="./img/marco-avatar.png" alt="Avatar" /></article>
+
+    <!-- SECCION DEL AVATAR, LOGIN Y REGISTRARSE -->
+    <section class="bodyAvatar-and-Login"><!-- Caja del Avatar -->
+      <article class="avatar" title="Solo es un .png">
+        <img src="./img/marco-avatar.png" alt="Avatar" />
+      </article>
 
       <article class="inicioDeSesion">
+
         <!-- ZONA DE INICIO DE SESION -->
         <form action="" method="POST">
-
-          <!-- Ingreso de email y contraseña -->
-          <input type="email" name="correo" size="35" class="dataInput" placeholder="ejemplo555@supermail.com" required="required" autofocus>
+          <!-- Input de ingreso de EMAIL -->
+          <input
+          type="email"
+          name="correo"
+          size="35"
+          class="dataInput"
+          placeholder="ejemplo555@supermail.com"
+          required="required"
+          autofocus
+          />
           <br />
-          <input type="password" name="clave" size="35" class="dataInput" placeholder="Contrase&ntilde;a" required="required">
+          <!-- Input de ingreso de PASSWORD-->
+          <input
+            type="password"
+            name="clave"
+            size="35"
+            class="dataInput"
+            placeholder="Contrase&ntilde;a"
+            required="required"
+          />
           <br />
 
-          <!-- OPCIONES ADICIONALES DE INICIO DE SESION -->
-          <a class="passwordOlvidado" title="Restablecer la contrase&ntilde;a" href="#" target="_blank">¿Has olvidado tu contrase&ntilde;a?</a>
+          <!-- SECCION DE OPCIONES ADICIONALES DE INICIO DE SESION -->
+
+            <!-- olvidaste tu contraseña? -->
+          <a
+            class="passwordOlvidado"
+            title="Restablecer la contrase&ntilde;a"
+            href="#"
+            target="_blank"
+            >¿Has olvidado tu contrase&ntilde;a?</a
+          >
           <br />
 
-          <!-- Estado a mostrar al iniciar sesion -->
-          <label for="estado" class="estado DesktopOnly" title="Opciones de inicio de sesi&oacute;n">Iniciar sesi&oacute;n como: </label><i class="fas fa-square"></i>
-          <select id="estado" name="estado" class="estado">            
+          <!-- Estado(conectado/desconectado/ausente) a mostrar al iniciar sesion -->
+          <label
+            for="estado"
+            class="estado DesktopOnly"
+            title="Opciones de inicio de sesi&oacute;n"
+            >Iniciar sesi&oacute;n como: </label
+          ><i class="fas fa-square"></i>
+          <select id="estado" name="estado" class="estado">
             <option value="disponible">Disponible</option>
             <option value="desconectado">Ausente</option>
             <option value="ocupado">Ocupado</option>
-            <option value="desconectado">Aparecer sin conexión</option>            
+            <option value="desconectado">Aparecer sin conexión</option>
           </select>
           <br />
 
-          <!-- Botones para guardar los datos (id y password) y/o elegir si se desea iniciar automaticamente -->
-          <input type="checkbox" name="recordar-id" id="recordar-id" class="checkbox MobileOnly"><label class="checkboxLabel MobileOnly" for="recordar-id">Recordarme</label>
-          <input type="checkbox" name="recordar-id" id="recordar-id" class="checkbox TabletOnly"><label class="checkboxLabel TabletOnly" for="recordar-id">Recordar mi Id. y contrase&ntilde;a</label>
-          <input type="checkbox" name="recordar-id" id="recordar-id" class="checkbox DesktopOnly"><label class="checkboxLabel DesktopOnly" for="recordar-id">Recordar mi Id. y contrase&ntilde;a</label>
+          <!-- Botones Checkbox para guardar los datos (email&password) y/o elegir si se desea iniciar automaticamente -->
+          
+            <!-- Checkbox Recordarme Mobile -->
+          <input
+            type="checkbox"
+            name="recordar-id"
+            id="recordar-id"
+            class="checkbox MobileOnly"
+          /><label class="checkboxLabel MobileOnly" for="recordar-id"
+            >Recordarme</label>
+            <!-- Checkbox Recordarme Tablet -->
+          <input
+            type="checkbox"
+            name="recordar-id"
+            id="recordar-id"
+            class="checkbox TabletOnly"
+          /><label class="checkboxLabel TabletOnly" for="recordar-id"
+            >Recordar mi Id. y contrase&ntilde;a</label>
+            <!-- Checkbox Recordarme Desktop -->
+          <input
+            type="checkbox"
+            name="recordar-id"
+            id="recordar-id"
+            class="checkbox DesktopOnly"
+          /><label class="checkboxLabel DesktopOnly" for="recordar-id"
+            >Recordar mi Id. y contrase&ntilde;a</label>
           <br />
           
-          <input type="checkbox" name="auto-login" id="auto-login" class="checkbox MobileOnly" disabled><label class="checkboxLabel MobileOnly" for="auto-login">Iniciar autom&aacute;ticamente</label>
-          <input type="checkbox" name="auto-login" id="auto-login" class="checkbox TabletOnly" disabled><label class="checkboxLabel TabletOnly" for="auto-login">Iniciar sesi&oacute;n autom&aacute;ticamente <a title="Cambiar opciones de inicio de sesi&oacute;n y de inicio" href="#"><br />Opciones</a></label>
-          <input type="checkbox" name="auto-login" id="auto-login" class="checkbox DesktopOnly" disabled><label class="checkboxLabel DesktopOnly" for="auto-login">Iniciar sesi&oacute;n autom&aacute;ticamente <a title="Cambiar opciones de inicio de sesi&oacute;n y de inicio" href="#">Opciones</a></label>
-          <br />          
+            
+            <!-- Checkbox Autoinicio Mobile -->
+          <input
+            type="checkbox"
+            name="auto-login"
+            id="auto-login"
+            class="checkbox MobileOnly"
+            disabled
+          /><label class="checkboxLabel MobileOnly" for="auto-login"
+            >Iniciar autom&aacute;ticamente</label>
+            <!-- Checkbox Autoinicio Tablet -->          
+          <input
+            type="checkbox"
+            name="auto-login"
+            id="auto-login"
+            class="checkbox TabletOnly"
+            disabled
+          /><label class="checkboxLabel TabletOnly" for="auto-login"
+            >Iniciar sesi&oacute;n autom&aacute;ticamente
+            <a
+              title="Cambiar opciones de inicio de sesi&oacute;n y de inicio"
+              href="#"
+              ><br />Opciones</a
+            ></label>
+            <!-- Checkbox Autoinicio Desktop -->          
+          <input
+            type="checkbox"
+            name="auto-login"
+            id="auto-login"
+            class="checkbox DesktopOnly"
+            disabled
+          /><label class="checkboxLabel DesktopOnly" for="auto-login"
+            >Iniciar sesi&oacute;n autom&aacute;ticamente
+            <a
+              title="Cambiar opciones de inicio de sesi&oacute;n y de inicio"
+              href="#"
+              >Opciones</a
+            ></label>
+          <br />
 
-          <!-- Botones de inicio de sesion -->
-          <input type="submit" value="Iniciar Sesi&oacute;n" id="btnSubmit" title="Welcome back to 2011!">
-          <input type="reset" value="Cancelar" id="btnCancel" title="Resetear todos los campos">
+          <!-- Botones "iniciar sesion" y "cancelar" -->
+          <input
+            type="submit"
+            value="Iniciar Sesi&oacute;n"
+            id="btnSubmit"
+            title="Welcome back to 2011!"
+          />
+          <input
+            type="reset"
+            value="Cancelar"
+            id="btnCancel"
+            title="Resetear todos los campos"
+          />
         </form>
 
-        <a class="registrarse MobileOnly" title="Permite suscribirse al Proyecto" href="#">Registrarse</a>
-        <p class="registrarse TabletOnly">No tienes un ID de ProyectoCaC? <a title="Permite suscribirse al Proyecto" href="#"><br />Registrarse</a></p>
-        <p class="registrarse DesktopOnly">No tienes un ID de ProyectoCaC? <a title="Permite suscribirse al Proyecto" href="#">Registrarse</a></p>
+        <!-- Pie del formulario con boton de registro -->
+          <!-- Registro para Mobile -->
+        <a
+          class="registrarse MobileOnly"
+          title="Permite suscribirse al Proyecto"
+          href="#"
+          >Registrarse</a>          
+          <!-- Registro para Tablet -->        
+        <a class="registrarse TabletOnly" title="Permite suscribirse al Proyecto" href="#"
+            >Registrarse</a
+        >
+          <!-- Registro para Desktop -->
+        <p class="registrarse DesktopOnly">
+          No tienes un ID de ProyectoCaC?
+          <a title="Permite suscribirse al Proyecto" href="#">Registrarse</a>
+        </p>
 
       </article>
     </section>
 
+    <!-- SECCION DEL FOOTER -->
     <footer class="footerIndex" id="contact">
+
       <a href="#">Contactenos</a>
-      <p><strong>Hecho por Gaston Ezequiel Giacobini - Proyecto Codo a Codo Full Stack Python.</strong></p>
+      <p>
+        <strong
+          >Hecho por Gaston Ezequiel Giacobini - Proyecto Codo a Codo Full Stack
+          Python.</strong
+        >
+      </p>
       <a href="#">Acerca de</a>
+
     </footer>
+
+    <!-- Scripts para anular checkbox de autoinicio cuando esta desmarcado el checkbox de recordar datos -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="./javascript/mainMessenger.js"></script>
-  </body>  
+  </body>
 </html>

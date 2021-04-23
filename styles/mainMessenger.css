@@ -3,6 +3,7 @@
     margin: 0;
     font-family: sans-serif;
 }
+
 body {
     background: linear-gradient(to bottom, #33C0E3, white 30vh);
     background-repeat: repeat-x;
@@ -11,23 +12,21 @@ body {
     flex-direction: column;
     font-size: clamp(.7rem, min(2.5vh, 2.5vw), 1rem);
 }
+
 a {
     text-decoration: none;
     color: rgb(24, 95, 167)
 }
-a:visited {
-    color: rgb(24, 95, 167)
-}
-a:hover {
-    text-decoration: underline;
-}
 
-/* ----Todo dentro del BODY---- */
+a:visited {color: rgb(24, 95, 167)}
 
-/* ----Header---- */
+a:hover {text-decoration: underline;}
+
+/* ----BODY---- */
+
+/* ----Cabecera---- */
 .tittleZone {
     display: flex;
-    /* height: 25vh; */
     flex-direction: column-reverse;
     justify-content: flex-end;
     align-items: center;
@@ -53,8 +52,7 @@ a:hover {
     align-self: flex-end;
 }
 
-/* ----Body---- */
-/* AVATAR */
+/* Avatar */
 .avatar {
     width: auto;
     height: auto;
@@ -70,7 +68,7 @@ a:hover {
     height: 65vh;
 }
 
-/* LOGIN */
+/* Login */
 .inicioDeSesion {
     margin-top: 10px;
     display: flex;
@@ -87,12 +85,13 @@ a:hover {
     padding-left: 6px;
     border: 1px solid #767676;
 }
+
 .dataInput:focus {
     border: 1.1px solid black;
     outline: 0;
 }
 
-/* LOGIN OPCIONES ADICIONALES */
+/* Opciones adicionales del login */
 .fa-square {
     color: #3EDD0F;
     text-shadow: 0 0 1px black;
@@ -104,7 +103,6 @@ a:hover {
     border: none;
     width: 120px;
 }
-
 
 .checkbox {
     width: 16px;
@@ -123,9 +121,8 @@ a:hover {
     margin-top: 6px;
 }
 
-/* Footer */
+/* ----FOOTER---- */
 footer.footerIndex {
-    /* border: 1px dashed red; */
     height: 10%;
     width: 100%;
     padding-bottom: 1%;
@@ -143,6 +140,7 @@ footer a {
 footer a:visited {
     color: #4b4b4b;
 }
+
 
 /*///////////////////////////////////////////////////////*/
 /*/////////////////// MEDIA QUERYS //////////////////////*/
@@ -185,6 +183,7 @@ footer a:visited {
         width: 40vw;
         min-width: 114px;
     }
+
     /* Zona login */
     .dataInput {
         width: 85%;
@@ -247,25 +246,40 @@ footer a:visited {
     }
 }
 
-
-@media only screen and (min-width: 426px) and (max-width: 768px) { 
-    .MobileOnly, .DesktopOnly, footer p {
+@media only screen and (min-width: 426px) and (max-width: 960px) { 
+    /* General */
+    .MobileOnly, .DesktopOnly, #contact, .tittleZone {
         display: none;
     }
-
+    
     body {
         font-size: 1rem;
+        justify-content: center;
     }
 
+    /* Cabecera */
     .tittleZone {
         font-size: .8rem;
         margin-bottom: 20px;
     }
 
-    .avatar {
-        margin: 0 2vw 0 10px;
+    /* Avatar */
+    .bodyAvatar-and-Login {
+        align-items: center;
+        text-align: center;
     }
     
+    .avatar {
+        max-width: none;
+        max-height: none;
+        
+    }
+    .avatar img {
+        text-align: center;
+        width: 25vw;
+    }
+    
+    /* Login */
     form {
         margin-left: 3vw;
     }
@@ -289,17 +303,18 @@ footer a:visited {
         font-size: 1rem;
         text-align: center;
         margin: 0;
-    }
-    .registrarse a {
         font-size: 1.2rem;
+        text-decoration: none;
     }
 
+    /* footer */
     footer * {
         font-size: 1rem;
     }
+
 }
 
-@media only screen and (min-width: 769px) { 
+@media only screen and (min-width: 961px) { 
     .MobileOnly, .TabletOnly {
         display: none;
     }
