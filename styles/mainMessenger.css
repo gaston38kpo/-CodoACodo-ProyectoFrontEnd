@@ -31,7 +31,11 @@ a:hover {text-decoration: underline;}
 /*                  BODY                  */
 /* ////////////////////////////////////// */
 
-/* Cabecera */
+
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Cabecera ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+/* Titulo */
 .tittleZone {
     display: flex;
     flex-direction: column-reverse;
@@ -54,10 +58,20 @@ a:hover {text-decoration: underline;}
     letter-spacing: -3px;
 }
 
+/* Icono de Ayuda */
 .tittleZone a {
     color: #0f2faf;
     margin: 16px 16px 0 0;
     align-self: flex-end;
+}
+
+/* ↓SECCION DEL AVATAR, LOGIN Y REGISTRARSE↓ */
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+.bodyAvatar-and-Login{
+    display: flex;
+    justify-content: center;
+    height: 65vh;
 }
 
 /* Avatar */
@@ -68,14 +82,9 @@ a:hover {text-decoration: underline;}
     max-height: 114px;
     margin-right: 10px;
 }
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ INPUTS ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 
-.bodyAvatar-and-Login{
-    display: flex;
-    justify-content: center;
-    height: 65vh;
-}
-
-/* Login */
 .inicioDeSesion {
     margin-top: 10px;
     display: flex;
@@ -84,6 +93,7 @@ a:hover {text-decoration: underline;}
 
 .inicioDeSesion form * {margin: 5px auto;}
 
+/* Logins Inputs */
 .dataInput {
     height: 25px;
     padding-left: 6px;
@@ -97,7 +107,10 @@ a:hover {text-decoration: underline;}
     outline: 0;
 }
 
-/* Opciones adicionales del login */
+/* ↓OPCIONES ADICIONALES DE INICIO DE SESION↓ */
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+/* Menu desplegable del login STATUS */
 .fa-square {
     color: #3EDD0F;
     text-shadow: 0 0 1px black;
@@ -109,6 +122,7 @@ a:hover {text-decoration: underline;}
     width: 120px;
 }
 
+/* Checkboxs opcionales para guardar sesion */
 .checkbox {
     position: relative;
     top: 2px;
@@ -118,10 +132,16 @@ a:hover {text-decoration: underline;}
     height: 16px;
 }
 
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓Botones↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
 #btnSubmit, #btnCancel {
     margin: 16px 5px;
     padding: 5px 10px;
 }
+
+/* ↓↓↓↓↓↓↓↓↓↓↓Zona de Registro↓↓↓↓↓↓↓↓↓↓↓ */
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 
 .registrarse{margin-top: 6px;}
 
@@ -147,15 +167,19 @@ footer a {color: #4b4b4b;}
 footer a:visited {color: #4b4b4b;}
 
 
-/* ////////////////////////////////////// */
-/* ************ MEDIA QUERYS ************ */
-/* ////////////////////////////////////// */
+/* ************************************************ */
+/* ***************** MEDIA QUERYS ***************** */
+/* ************************************************ */
 
-/* ////////////////////////////////////// */
-/*                MOBILE                  */
-/* ////////////////////////////////////// */
+/* ****************************************** */
+/* ***************** MOBILE ***************** */
+/* ****************************************** */
 
 @media only screen and (max-width : 425px) {
+    /* ////////////////////////////////////// */
+    /*             GLOBAL MOBILE              */
+    /* ////////////////////////////////////// */
+
     body {
         display: flex;
         text-align: center;
@@ -163,16 +187,21 @@ footer a:visited {color: #4b4b4b;}
         
         font-size: 1rem;
     }
-    
+
+    /* ////////////////////////////////////// */
+    /*              BODY MOBILE               */
+    /* ////////////////////////////////////// */
+
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Cabecera ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
     /* Titulo */
     .tittleZone, #contact, .DesktopOnly, .fa-square, .TabletOnly {display: none;}
     
-    /* Avatar */
-    .inicioDeSesion {
-        width: 100%;
-        margin-top: 0;
-    }
+    /* ↓SECCION DEL AVATAR, LOGIN Y REGISTRARSE↓ */
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 
+    /* Avatar */    
     .bodyAvatar-and-Login {
         height: auto;
         
@@ -180,7 +209,7 @@ footer a:visited {color: #4b4b4b;}
         flex-direction: column;
         align-items: center;
     }
-
+    
     .avatar {
         display: flex;
         justify-content: center;
@@ -196,15 +225,28 @@ footer a:visited {color: #4b4b4b;}
         width: 30vw;
         min-width: 114px;
     }
+    
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ INPUTS ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 
-    /* Zona login */
+    .inicioDeSesion {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    /* Inputs EMAIL y PASSWORD */
     .dataInput {
         width: 85%;
         height: 35px;
     }
 
+    /* OPCIONES ADICIONALES DE INICIO DE SESION */
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+    
+    /* Olvidaste tu contraseña? */
     .passwordOlvidado {font-size: 1.1rem;}
 
+    /* Menu desplegable del login STATUS */
     #estado {
         font-size: 1.2rem;
         
@@ -219,13 +261,19 @@ footer a:visited {color: #4b4b4b;}
 
     #estado * {text-justify: center;}
 
+    /* Checkboxs opcionales para guardar sesion */
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+    
     .checkbox {
         width: 22px;
         height: 22px;
     }
     
     .checkboxLabel, .registrarse {font-size: 1.2rem;}
-
+    
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Botones ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+    
     #btnSubmit, #btnCancel {
         margin: 10px auto;
         padding: 7px 12px;
@@ -235,6 +283,9 @@ footer a:visited {color: #4b4b4b;}
         
         font-size: 1.2rem;
     }
+    
+    /* ↓↓↓↓↓↓↓↓↓↓ Zona de Registro ↓↓↓↓↓↓↓↓↓↓ */
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 
     .registrarse {
         width: 200px;
@@ -251,11 +302,14 @@ footer a:visited {color: #4b4b4b;}
     .registrarse:visited {color: black;}
 }
 
-/* ////////////////////////////////////// */
-/*                TABLET                  */
-/* ////////////////////////////////////// */
+/* ****************************************** */
+/* ***************** TABLET ***************** */
+/* ****************************************** */
 @media only screen and (min-width: 426px) and (max-width: 960px) { 
-    /* General */
+    /* ////////////////////////////////////// */
+    /*             GLOBAL TABLET              */
+    /* ////////////////////////////////////// */
+
     .MobileOnly, .DesktopOnly, #contact {display: none;}
     
     body {
@@ -263,7 +317,14 @@ footer a:visited {color: #4b4b4b;}
         font-size: 1rem;
     }
 
-    /* Cabecera */
+    /* ////////////////////////////////////// */
+    /*              BODY TABLET               */
+    /* ////////////////////////////////////// */
+
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Cabecera ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+    /* Titulo */
     .tittleZone {
         margin-bottom: 20px;
         font-size: .9rem;
@@ -289,13 +350,22 @@ footer a:visited {color: #4b4b4b;}
         text-align: center;
     }
     
-    /* Login */
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ INPUTS ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
     form {margin-left: 3vw;}
 
+    /* Inputs EMAIL y PASSWORD */
     .dataInput {
         width: 85%;
         height: 35px;
     }
+
+    /* OPCIONES ADICIONALES DE INICIO DE SESION */
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+    /* Checkboxs opcionales para guardar sesion */
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 
     .checkbox {
         width: 20px;
@@ -307,6 +377,9 @@ footer a:visited {color: #4b4b4b;}
         text-align: center;
     }
 
+    /* ↓↓↓↓↓↓↓↓↓↓ Zona de Registro ↓↓↓↓↓↓↓↓↓↓ */
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
     .registrarse {
         margin: 0;
         
@@ -316,14 +389,22 @@ footer a:visited {color: #4b4b4b;}
         text-decoration: none;
     }
 
-    /* footer */
+    /* ////////////////////////////////////// */
+    /*             FOOTER TABLET              */
+    /* ////////////////////////////////////// */
+
     footer * {font-size: 1rem;}
 
 }
 
-/* ////////////////////////////////////// */
-/*                DESKTOP                  */
-/* ////////////////////////////////////// */
+/* ****************************************** */
+/* ***************** DESKTOP ***************** */
+/* ****************************************** */
 @media only screen and (min-width: 961px) { 
+    /* ////////////////////////////////////// */
+    /*             GLOBAL DESKTOP             */
+    /* ////////////////////////////////////// */
+
     .MobileOnly, .TabletOnly {display: none;}
+        
 }
