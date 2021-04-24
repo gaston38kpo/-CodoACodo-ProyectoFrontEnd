@@ -30,8 +30,11 @@
     <link rel="stylesheet" href="./styles/mainMessenger.css" />
 
     <title>Proyecto - Codo a Codo</title>
+  
   </head>
-  <!-- ***************Fin-Head*************** -->
+    <!-- ************************************** -->
+    <!-- ***************Fin-Head*************** -->
+    <!-- ************************************** -->
 
   <body>
     <!-- ////////////////////////////////////// -->
@@ -39,15 +42,14 @@
     <!-- ////////////////////////////////////// -->
 
     <header class="tittleZone">
-      <!--   Titulo  -->
-
+      
       <h1 title="Es un titulo ficticio (a que te lo creiste we)">
+        <!--   Titulo  -->
         Iniciar sesi&oacute;n en <br />
         Proyecto <b>Codo a Codo</b>
       </h1>
 
       <!--   Icono de Ayuda   -->
-
       <a href="#" title="Ir a la seccion de ayuda"
         ><i class="fas fa-question-circle fa-2x"></i
       ></a>
@@ -58,14 +60,15 @@
     <!-- ////////////////////////////////////// -->
 
     <section class="bodyAvatar-and-Login">
-      <!-- Caja del Avatar -->
+
       <article class="avatar" title="Solo es un .png">
+        <!-- Avatar -->
         <img src="./img/marco-avatar.png" alt="Avatar" />
       </article>
 
       <article class="inicioDeSesion">
         <!-- ////////////////////////////////////// -->
-        <!--       INPUTS DE INICIO DE SESION       -->
+        <!--                INPUTS                  -->
         <!-- ////////////////////////////////////// -->
 
         <form action="" method="POST">
@@ -108,7 +111,8 @@
           >
           <br />
 
-          <!-- Menu desplegable de STATUS (Conectado/Desconectado/Ausente) -->
+          <!-- Menu desplegable del login STATUS 
+            (Conectado/Desconectado/Ausente) -->
           <label
             for="estado"
             class="estado DesktopOnly"
@@ -124,11 +128,11 @@
           <br />
 
           <!-- ////////////////////////////////////// -->
-          <!-- Cajas Checkbox para guardar sesion(email/password) 
+          <!-- Checkboxs opcionales para guardar sesion(email/password) 
             y/o elegir si se desea iniciar automaticamente -->
           <!-- ////////////////////////////////////// -->
 
-          <!-- RECORDAR SESION  -->
+          <!-- Input RECORDAR SESION  -->
           <input
             type="checkbox"
             name="recordar-id"
@@ -137,21 +141,18 @@
           />
           <!-- Label RECORDAR SESION Desktop -->
           <label class="checkboxLabel DesktopOnly" for="recordar-id"
-            >Recordar mi Id. y contrase&ntilde;a</label
-          >
+            >Recordar mi Id. y contrase&ntilde;a</label>
           <!-- Label RECORDAR SESION Tablet -->
           <label class="checkboxLabel TabletOnly" for="recordar-id"
-            >Recordar mi Id. y contrase&ntilde;a</label
-          >
+            >Recordar mi Id. y contrase&ntilde;a</label>
           <!-- Label RECORDAR SESION Mobile -->
           <label class="checkboxLabel MobileOnly" for="recordar-id"
-            >Recordarme</label
-          >
+            >Recordarme</label>
           <br />
 
           <!------------------------>
 
-          <!-- AUTOLOGIN -->
+          <!-- Input AUTOLOGIN -->
           <input
             type="checkbox"
             name="auto-login"
@@ -166,33 +167,32 @@
               title="Cambiar opciones de inicio de sesi&oacute;n y de inicio"
               href="#"
               >Opciones</a
-            ></label
-          >
-          <!-- Label AUTOLOGIN Mobile -->
-          <label class="checkboxLabel MobileOnly" for="auto-login"
-            >Iniciar autom&aacute;ticamente</label
-          >
+            ></label>
           <!-- Label AUTOLOGIN Tablet -->
           <label class="checkboxLabel TabletOnly" for="auto-login"
-            >Iniciar sesi&oacute;n autom&aacute;ticamente
-            <a
-              title="Cambiar opciones de inicio de sesi&oacute;n y de inicio"
-              href="#"
-              ><br />Opciones</a
-            ></label
-          >
+          >Iniciar sesi&oacute;n autom&aacute;ticamente
+          <a
+          title="Cambiar opciones de inicio de sesi&oacute;n y de inicio"
+          href="#"
+          ><br />Opciones</a
+          ></label>
+          <!-- Label AUTOLOGIN Mobile -->
+          <label class="checkboxLabel MobileOnly" for="auto-login"
+            >Iniciar autom&aacute;ticamente</label>
           <br />
 
           <!-- ////////////////////////////////////// -->
-          <!-- Botones "iniciar sesion" y "cancelar" -->
+          <!--                Botones                 -->
           <!-- ////////////////////////////////////// -->
 
+          <!-- Boton Iniciar Sesion -->
           <input
             type="submit"
             value="Iniciar Sesi&oacute;n"
             id="btnSubmit"
             title="Welcome back to 2011!"
           />
+          <!-- Boton Cancelar -->
           <input
             type="reset"
             value="Cancelar"
@@ -202,7 +202,7 @@
         </form>
 
         <!-- ////////////////////////////////////// -->
-        <!-- Pie del formulario con boton de registro -->
+        <!--            Zona de Registro            -->
         <!-- ////////////////////////////////////// -->
 
         <!-- Registro para Mobile -->
