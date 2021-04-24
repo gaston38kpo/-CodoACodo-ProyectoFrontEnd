@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!-- ////////////////////////////////////// -->
+    <!--                META TAGS               -->
+    <!-- ////////////////////////////////////// -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ////////////////////////////////////// -->
+    <!--            FUENTES DE GOOGLE           -->
+    <!-- ////////////////////////////////////// -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -15,45 +22,68 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap"
       rel="stylesheet"
     />
+
+    <!-- ////////////////////////////////////// -->
+    <!--                 ESTILOS                -->
+    <!-- ////////////////////////////////////// -->
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/mainMessenger.css" />
+
     <title>Proyecto - Codo a Codo</title>
   </head>
+  <!-- ***************Fin-Head*************** -->
+
   <body>
-    <!-- SECCION DE TODA LA CABECERA -->
+    <!-- ////////////////////////////////////// -->
+    <!--                CABECERA                -->
+    <!-- ////////////////////////////////////// -->
+
     <header class="tittleZone">
-      <!-- Cabecera con titulo e icono de FAQ -->
+      <!--   Titulo  -->
+
       <h1 title="Es un titulo ficticio (a que te lo creiste we)">
         Iniciar sesi&oacute;n en <br />
         Proyecto <b>Codo a Codo</b>
       </h1>
+
+      <!--   Icono de Ayuda   -->
+
       <a href="#" title="Ir a la seccion de ayuda"
         ><i class="fas fa-question-circle fa-2x"></i
       ></a>
     </header>
 
+    <!-- ////////////////////////////////////// -->
     <!-- SECCION DEL AVATAR, LOGIN Y REGISTRARSE -->
-    <section class="bodyAvatar-and-Login"><!-- Caja del Avatar -->
+    <!-- ////////////////////////////////////// -->
+
+    <section class="bodyAvatar-and-Login">
+      <!-- Caja del Avatar -->
       <article class="avatar" title="Solo es un .png">
         <img src="./img/marco-avatar.png" alt="Avatar" />
       </article>
 
       <article class="inicioDeSesion">
+        <!-- ////////////////////////////////////// -->
+        <!--       INPUTS DE INICIO DE SESION       -->
+        <!-- ////////////////////////////////////// -->
 
-        <!-- ZONA DE INICIO DE SESION -->
         <form action="" method="POST">
-          <!-- Input de ingreso de EMAIL -->
+          <!-- Input EMAIL -->
           <input
-          type="email"
-          name="correo"
-          size="35"
-          class="dataInput"
-          placeholder="ejemplo555@supermail.com"
-          required="required"
-          autofocus
+            type="email"
+            name="correo"
+            size="35"
+            class="dataInput"
+            placeholder="ejemplo555@supermail.com"
+            required="required"
+            autofocus
           />
           <br />
-          <!-- Input de ingreso de PASSWORD-->
+
+          <!------------------------>
+
+          <!-- Input PASSWORD-->
           <input
             type="password"
             name="clave"
@@ -64,9 +94,11 @@
           />
           <br />
 
-          <!-- SECCION DE OPCIONES ADICIONALES DE INICIO DE SESION -->
+          <!-- ////////////////////////////////////// -->
+          <!-- OPCIONES ADICIONALES DE INICIO DE SESION -->
+          <!-- ////////////////////////////////////// -->
 
-            <!-- olvidaste tu contraseña? -->
+          <!-- Olvidaste tu contraseña? -->
           <a
             class="passwordOlvidado"
             title="Restablecer la contrase&ntilde;a"
@@ -76,7 +108,7 @@
           >
           <br />
 
-          <!-- Estado(conectado/desconectado/ausente) a mostrar al iniciar sesion -->
+          <!-- Menu desplegable de STATUS (Conectado/Desconectado/Ausente) -->
           <label
             for="estado"
             class="estado DesktopOnly"
@@ -91,75 +123,70 @@
           </select>
           <br />
 
-          <!-- Botones Checkbox para guardar los datos (email&password) y/o elegir si se desea iniciar automaticamente -->
-          
-            <!-- Checkbox Recordarme Mobile -->
+          <!-- ////////////////////////////////////// -->
+          <!-- Cajas Checkbox para guardar sesion(email/password) 
+            y/o elegir si se desea iniciar automaticamente -->
+          <!-- ////////////////////////////////////// -->
+
+          <!-- RECORDAR SESION  -->
           <input
             type="checkbox"
             name="recordar-id"
             id="recordar-id"
-            class="checkbox MobileOnly"
-          /><label class="checkboxLabel MobileOnly" for="recordar-id"
-            >Recordarme</label>
-            <!-- Checkbox Recordarme Tablet -->
-          <input
-            type="checkbox"
-            name="recordar-id"
-            id="recordar-id"
-            class="checkbox TabletOnly"
-          /><label class="checkboxLabel TabletOnly" for="recordar-id"
-            >Recordar mi Id. y contrase&ntilde;a</label>
-            <!-- Checkbox Recordarme Desktop -->
-          <input
-            type="checkbox"
-            name="recordar-id"
-            id="recordar-id"
-            class="checkbox DesktopOnly"
-          /><label class="checkboxLabel DesktopOnly" for="recordar-id"
-            >Recordar mi Id. y contrase&ntilde;a</label>
+            class="checkbox"
+          />
+          <!-- Label RECORDAR SESION Desktop -->
+          <label class="checkboxLabel DesktopOnly" for="recordar-id"
+            >Recordar mi Id. y contrase&ntilde;a</label
+          >
+          <!-- Label RECORDAR SESION Tablet -->
+          <label class="checkboxLabel TabletOnly" for="recordar-id"
+            >Recordar mi Id. y contrase&ntilde;a</label
+          >
+          <!-- Label RECORDAR SESION Mobile -->
+          <label class="checkboxLabel MobileOnly" for="recordar-id"
+            >Recordarme</label
+          >
           <br />
-          
-            
-            <!-- Checkbox Autoinicio Mobile -->
+
+          <!------------------------>
+
+          <!-- AUTOLOGIN -->
           <input
             type="checkbox"
             name="auto-login"
             id="auto-login"
-            class="checkbox MobileOnly"
+            class="checkbox"
             disabled
-          /><label class="checkboxLabel MobileOnly" for="auto-login"
-            >Iniciar autom&aacute;ticamente</label>
-            <!-- Checkbox Autoinicio Tablet -->          
-          <input
-            type="checkbox"
-            name="auto-login"
-            id="auto-login"
-            class="checkbox TabletOnly"
-            disabled
-          /><label class="checkboxLabel TabletOnly" for="auto-login"
-            >Iniciar sesi&oacute;n autom&aacute;ticamente
-            <a
-              title="Cambiar opciones de inicio de sesi&oacute;n y de inicio"
-              href="#"
-              ><br />Opciones</a
-            ></label>
-            <!-- Checkbox Autoinicio Desktop -->          
-          <input
-            type="checkbox"
-            name="auto-login"
-            id="auto-login"
-            class="checkbox DesktopOnly"
-            disabled
-          /><label class="checkboxLabel DesktopOnly" for="auto-login"
+          />
+          <!-- Label AUTOLOGIN Desktop -->
+          <label class="checkboxLabel DesktopOnly" for="auto-login"
             >Iniciar sesi&oacute;n autom&aacute;ticamente
             <a
               title="Cambiar opciones de inicio de sesi&oacute;n y de inicio"
               href="#"
               >Opciones</a
-            ></label>
+            ></label
+          >
+          <!-- Label AUTOLOGIN Mobile -->
+          <label class="checkboxLabel MobileOnly" for="auto-login"
+            >Iniciar autom&aacute;ticamente</label
+          >
+          <!-- Label AUTOLOGIN Tablet -->
+          <label class="checkboxLabel TabletOnly" for="auto-login"
+            >Iniciar sesi&oacute;n autom&aacute;ticamente
+            <a
+              title="Cambiar opciones de inicio de sesi&oacute;n y de inicio"
+              href="#"
+              ><br />Opciones</a
+            ></label
+          >
           <br />
 
+          <!-- ////////////////////////////////////// -->
           <!-- Botones "iniciar sesion" y "cancelar" -->
+          <!-- ////////////////////////////////////// -->
+
           <input
             type="submit"
             value="Iniciar Sesi&oacute;n"
@@ -174,29 +201,36 @@
           />
         </form>
 
+        <!-- ////////////////////////////////////// -->
         <!-- Pie del formulario con boton de registro -->
-          <!-- Registro para Mobile -->
+        <!-- ////////////////////////////////////// -->
+
+        <!-- Registro para Mobile -->
         <a
           class="registrarse MobileOnly"
           title="Permite suscribirse al Proyecto"
           href="#"
-          >Registrarse</a>          
-          <!-- Registro para Tablet -->        
-        <a class="registrarse TabletOnly" title="Permite suscribirse al Proyecto" href="#"
-            >Registrarse</a
+          >Registrarse</a
         >
-          <!-- Registro para Desktop -->
+        <!-- Registro para Tablet -->
+        <a
+          class="registrarse TabletOnly"
+          title="Permite suscribirse al Proyecto"
+          href="#"
+          >Registrarse</a
+        >
+        <!-- Registro para Desktop -->
         <p class="registrarse DesktopOnly">
           No tienes un ID de ProyectoCaC?
           <a title="Permite suscribirse al Proyecto" href="#">Registrarse</a>
         </p>
-
       </article>
     </section>
 
-    <!-- SECCION DEL FOOTER -->
+    <!-- ////////////////////////////////////// -->
+    <!--                 FOOTER                 -->
+    <!-- ////////////////////////////////////// -->
     <footer class="footerIndex" id="contact">
-
       <a href="#">Contactenos</a>
       <p>
         <strong
@@ -205,10 +239,13 @@
         >
       </p>
       <a href="#">Acerca de</a>
-
     </footer>
 
-    <!-- Scripts para anular checkbox de autoinicio cuando esta desmarcado el checkbox de recordar datos -->
+    <!-- ////////////////////////////////////// -->
+    <!-- Pequeño Script para anular checkbox de autoinicio 
+      cuando esta desmarcado el checkbox de recordar datos -->
+    <!-- ////////////////////////////////////// -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="./javascript/mainMessenger.js"></script>
   </body>

@@ -5,7 +5,7 @@ $('#recordar-id').click(function() {
         // Habilita cada input que tenga id auto-login
         $('#auto-login').prop('disabled', false);
     } else {
-        // Deshabilita cada input que tenga id auto-login y lo deselecciona
+        // Deselecciona el que tenga id auto-login y lo deshabilita
         $('#auto-login').prop('disabled', true);
         $('#auto-login').prop('checked', false);
     }
