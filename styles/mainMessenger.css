@@ -1,4 +1,7 @@
-/* ----GLOBAL---- */
+/* ////////////////////////////////////// */
+/*                GLOBAL                  */
+/* ////////////////////////////////////// */
+
 * {
     margin: 0;
     font-family: sans-serif;
@@ -24,9 +27,11 @@ a:visited {color: rgb(24, 95, 167)}
 
 a:hover {text-decoration: underline;}
 
-/* ----BODY---- */
+/* ////////////////////////////////////// */
+/*                  BODY                  */
+/* ////////////////////////////////////// */
 
-/* ----Cabecera---- */
+/* Cabecera */
 .tittleZone {
     display: flex;
     flex-direction: column-reverse;
@@ -120,7 +125,10 @@ a:hover {text-decoration: underline;}
 
 .registrarse{margin-top: 6px;}
 
-/* ----FOOTER---- */
+/* ////////////////////////////////////// */
+/*                 FOOTER                 */
+/* ////////////////////////////////////// */
+
 footer.footerIndex {
     height: 10%;
     width: 100%;
@@ -139,11 +147,14 @@ footer a {color: #4b4b4b;}
 footer a:visited {color: #4b4b4b;}
 
 
-/*///////////////////////////////////////////////////////*/
-/*/////////////////// MEDIA QUERYS //////////////////////*/
-/*///////////////////////////////////////////////////////*/
+/* ////////////////////////////////////// */
+/* ************ MEDIA QUERYS ************ */
+/* ////////////////////////////////////// */
 
-/* Mobile */
+/* ////////////////////////////////////// */
+/*                MOBILE                  */
+/* ////////////////////////////////////// */
+
 @media only screen and (max-width : 425px) {
     body {
         display: flex;
@@ -240,7 +251,9 @@ footer a:visited {color: #4b4b4b;}
     .registrarse:visited {color: black;}
 }
 
-/* Tablet */
+/* ////////////////////////////////////// */
+/*                TABLET                  */
+/* ////////////////////////////////////// */
 @media only screen and (min-width: 426px) and (max-width: 960px) { 
     /* General */
     .MobileOnly, .DesktopOnly, #contact {display: none;}
@@ -308,7 +321,9 @@ footer a:visited {color: #4b4b4b;}
 
 }
 
-/* Desktop */
+/* ////////////////////////////////////// */
+/*                DESKTOP                  */
+/* ////////////////////////////////////// */
 @media only screen and (min-width: 961px) { 
     .MobileOnly, .TabletOnly {display: none;}
 }
