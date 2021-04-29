@@ -1,0 +1,82 @@
+/* ----GLOBAL---- */
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+body {
+    background-image: url(../img/wallpaperDesktopHD.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    height: 100vh;
+
+    font-size: .8rem;
+    text-align: center;
+    transition: font-size .2s ease;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ----Todo dentro del BODY---- */
+
+/* ----Iconos escritorio---- */
+nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 110px;
+}
+
+
+.taskbarBox a div{
+    margin-bottom: 20px;
+}
+.taskbarBox p {
+    color: white;
+}
+
+.Shadow {
+    text-shadow: 0 0 1px black;
+}
+
+.fa-trash {
+    color: #E5EBEE;
+    margin-top: 10px;
+}
+
+.fa-desktop {
+    color: #868E95;
+}
+
+.fa-folder-open {
+    color: #FED36C;
+}
+
+.fa-edge {
+    color: #30BEDD;
+}
+
+.fa-facebook-messenger {
+    color: #0098F6;
+}
+
+.agradecimiento {
+    align-items: flex-end;
+    margin: auto 0 0 auto;
+
+    color: whitesmoke;
+    text-shadow: 0 0 2px black;    
+}
+
+.agradecimiento a {
+    color: goldenrod;
+}
+
+@media only screen and (min-width: 420px) {
+    body {
+        font-size: 1rem;
+    }
+}

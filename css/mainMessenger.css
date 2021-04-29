@@ -1,0 +1,410 @@
+/* ////////////////////////////////////// */
+/*                GLOBAL                  */
+/* ////////////////////////////////////// */
+
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #33C0E3, white 30vh);
+    background-repeat: repeat-x;
+
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+    font-size: clamp(.7rem, min(2.5vh, 2.5vw), 1rem);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(24, 95, 167)
+}
+
+a:visited {color: rgb(24, 95, 167)}
+
+a:hover {text-decoration: underline;}
+
+/* ////////////////////////////////////// */
+/*                  BODY                  */
+/* ////////////////////////////////////// */
+
+
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Cabecera ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+/* Titulo */
+.tittleZone {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.tittleZone h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: normal;
+    font-size: 3.7em;
+    
+    margin: 0 0 10px 0;
+    padding-left: 32px;
+}
+
+.tittleZone h1 b {
+    font-family: 'Open Sans Condensed', sans-serif;
+    word-spacing: -8px;
+    letter-spacing: -3px;
+}
+
+/* Icono de Ayuda */
+.tittleZone a {
+    color: #0f2faf;
+    margin: 16px 16px 0 0;
+    align-self: flex-end;
+}
+
+/* ↓SECCION DEL AVATAR, LOGIN Y REGISTRARSE↓ */
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+.bodyAvatar-and-Login{
+    display: flex;
+    justify-content: center;
+    height: 65vh;
+}
+
+/* Avatar */
+.avatar {
+    width: auto;
+    height: auto;
+    max-width: 114px;
+    max-height: 114px;
+    margin-right: 10px;
+}
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ INPUTS ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+.inicioDeSesion {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inicioDeSesion form * {margin: 5px auto;}
+
+/* Logins Inputs */
+.dataInput {
+    height: 25px;
+    padding-left: 6px;
+    
+    border: 1px solid #767676;
+    border-radius: 5px;
+}
+
+.dataInput:focus {
+    border: 1.1px solid black;
+    outline: 0;
+}
+
+/* ↓OPCIONES ADICIONALES DE INICIO DE SESION↓ */
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+/* Menu desplegable del login STATUS */
+.fa-square {
+    color: #3EDD0F;
+    text-shadow: 0 0 1px black;
+}
+
+#estado {
+    margin: 16px 0;
+    border: none;
+    width: 120px;
+}
+
+/* Checkboxs opcionales para guardar sesion */
+.checkbox {
+    position: relative;
+    top: 2px;
+    right: 3px;
+    
+    width: 16px;
+    height: 16px;
+}
+
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓Botones↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+#btnSubmit, #btnCancel {
+    margin: 16px 5px;
+    padding: 5px 10px;
+}
+
+/* ↓↓↓↓↓↓↓↓↓↓↓Zona de Registro↓↓↓↓↓↓↓↓↓↓↓ */
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+.registrarse{margin-top: 6px;}
+
+/* ////////////////////////////////////// */
+/*                 FOOTER                 */
+/* ////////////////////////////////////// */
+
+footer.footerIndex {
+    height: 10%;
+    width: 100%;
+    padding-bottom: 1%;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    
+    font-size: .8em;
+    color: #4b4b4b;
+}
+
+footer a {color: #4b4b4b;}
+
+footer a:visited {color: #4b4b4b;}
+
+
+/* ************************************************ */
+/* ***************** MEDIA QUERYS ***************** */
+/* ************************************************ */
+
+/* ****************************************** */
+/* ***************** MOBILE ***************** */
+/* ****************************************** */
+
+@media only screen and (max-width : 425px) {
+    /* ////////////////////////////////////// */
+    /*             GLOBAL MOBILE              */
+    /* ////////////////////////////////////// */
+
+    body {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        
+        font-size: 1rem;
+    }
+
+    /* ////////////////////////////////////// */
+    /*              BODY MOBILE               */
+    /* ////////////////////////////////////// */
+
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Cabecera ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+    /* Titulo */
+    .tittleZone, #contact, .DesktopOnly, .fa-square, .TabletOnly {display: none;}
+    
+    /* ↓SECCION DEL AVATAR, LOGIN Y REGISTRARSE↓ */
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+    /* Avatar */    
+    .bodyAvatar-and-Login {
+        height: auto;
+        
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .avatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        margin: 0;
+        max-width: none;
+        max-height: none;
+    }
+    
+    .avatar img {
+        margin: 8px 0;
+        width: 30vw;
+        min-width: 114px;
+    }
+    
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ INPUTS ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+    .inicioDeSesion {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    /* Inputs EMAIL y PASSWORD */
+    .dataInput {
+        width: 85%;
+        height: 35px;
+    }
+
+    /* OPCIONES ADICIONALES DE INICIO DE SESION */
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+    
+    /* Olvidaste tu contraseña? */
+    .passwordOlvidado {font-size: 1.1rem;}
+
+    /* Menu desplegable del login STATUS */
+    #estado {
+        font-size: 1.2rem;
+        
+        padding: 5px;
+        margin: 10px 0;
+        width: min-content;
+
+        outline: 0;
+        border-radius: 50px;
+        border: 1px solid gray;
+    }
+
+    #estado * {text-justify: center;}
+
+    /* Checkboxs opcionales para guardar sesion */
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+    
+    .checkbox {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .checkboxLabel, .registrarse {font-size: 1.2rem;}
+    
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Botones ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+    
+    #btnSubmit, #btnCancel {
+        margin: 10px auto;
+        padding: 7px 12px;
+        
+        display: block;
+        width: 200px;
+        
+        font-size: 1.2rem;
+    }
+    
+    /* ↓↓↓↓↓↓↓↓↓↓ Zona de Registro ↓↓↓↓↓↓↓↓↓↓ */
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+    .registrarse {
+        width: 200px;
+        padding: 8px 0;
+        margin: 0 auto 0;
+        
+        border: 1px solid #A2A2A2;
+        background-color: #EFEFEF;
+        color: black;
+    }
+
+    .registrarse:hover {text-decoration: none;}
+
+    .registrarse:visited {color: black;}
+}
+
+/* ****************************************** */
+/* ***************** TABLET ***************** */
+/* ****************************************** */
+@media only screen and (min-width: 426px) and (max-width: 960px) { 
+    /* ////////////////////////////////////// */
+    /*             GLOBAL TABLET              */
+    /* ////////////////////////////////////// */
+
+    .MobileOnly, .DesktopOnly, #contact {display: none;}
+    
+    body {
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    /* ////////////////////////////////////// */
+    /*              BODY TABLET               */
+    /* ////////////////////////////////////// */
+
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Cabecera ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+    /* Titulo */
+    .tittleZone {
+        margin-bottom: 20px;
+        font-size: .9rem;
+    }
+
+    /* Avatar */
+    .bodyAvatar-and-Login {
+        align-items: flex-start;
+        text-align: center;
+    }
+    
+    .avatar {        
+        max-width: none;
+        max-height: none;
+        
+    }
+
+    .avatar img {
+        width: 25vw;
+        max-width: 160px;
+        margin-left: 8px;
+        
+        text-align: center;
+    }
+    
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓ INPUTS ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+    form {margin-left: 3vw;}
+
+    /* Inputs EMAIL y PASSWORD */
+    .dataInput {
+        width: 85%;
+        height: 35px;
+    }
+
+    /* OPCIONES ADICIONALES DE INICIO DE SESION */
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+    /* Checkboxs opcionales para guardar sesion */
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+    .checkbox {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .checkboxLabel {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    /* ↓↓↓↓↓↓↓↓↓↓ Zona de Registro ↓↓↓↓↓↓↓↓↓↓ */
+    /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+    .registrarse {
+        margin: 0;
+        
+        font-size: 1rem;
+        text-align: center;
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+
+    /* ////////////////////////////////////// */
+    /*             FOOTER TABLET              */
+    /* ////////////////////////////////////// */
+
+    footer * {font-size: 1rem;}
+
+}
+
+/* ****************************************** */
+/* ***************** DESKTOP ***************** */
+/* ****************************************** */
+@media only screen and (min-width: 961px) { 
+    /* ////////////////////////////////////// */
+    /*             GLOBAL DESKTOP             */
+    /* ////////////////////////////////////// */
+
+    .MobileOnly, .TabletOnly {display: none;}
+        
+}
