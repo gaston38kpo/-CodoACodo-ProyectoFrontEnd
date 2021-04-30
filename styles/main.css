@@ -89,9 +89,7 @@ input+div {
     width: 100%;
     margin-bottom: 5px;
     padding-left: 6px;
-    transition: 
-        background-color .2s ease, 
-        border-color .2 ease;
+    transition: all .45s ease-out;
 }
 .userInput:focus {
     background-color: white;
