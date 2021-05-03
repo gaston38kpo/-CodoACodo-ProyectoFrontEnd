@@ -12,7 +12,7 @@ html:before {
     top: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 0;
     opacity: 0.4;
     background-image: url(../img/wallpaper-nieve.gif);
     background-repeat: no-repeat;
@@ -35,7 +35,7 @@ body {
 }
 
 body * {
-    z-index: 2;
+    z-index: 1;
 }
 
 header img {
@@ -58,12 +58,12 @@ input[type=search]{
     min-width: 250px;
     height: 40px;
     padding-left: 10px;
+    margin-right: 10;
     
     font-size: 1.2rem;
 
     background-color: #f2f2f2;
     border: 2px solid #ccc;
-    /* box-shadow: 0 0 6px #84327E; */
     border-radius: 9px;
     
     transition: all .2s ease-out;
@@ -78,7 +78,11 @@ input[type=search]:focus {
     outline: 0
 }
 
-input[type=submit]{
+.btn {
+    height: 40px;
+    font-size: 1.1rem;
+}
+/* input[type=submit]{
     height: 40px;
     width: 60px;
     margin-left: 2px;
@@ -98,10 +102,7 @@ input[type=submit]:hover {
     text-shadow: 0 0 4px #ECEBE5;
     color: #343F6E;
     font-weight: 100;
-}
-
-/* #reproductor {
-    background-color: red;
 } */
+
 
 @media screen and (max-width: 800px){}
