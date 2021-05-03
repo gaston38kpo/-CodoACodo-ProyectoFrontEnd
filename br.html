@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/br.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <img src="./img/Logo-rengoku.png" alt="doodle de doge" />
+    </header>
+    <section>
+      <form>
+        <input
+          type="search"
+          name="busquedaPython"
+          placeholder="Pilares, demonios, espadas..."
+        />
+
+        <input type="submit" value="GO!" />
+      </form>
+    </section>
+
+    <audio autoplay controls loop id="reproductor">
+      <source src="./music/Demon Slayer Movie Akaza Theme .mp3">este es un elemento de audio no soportado por tu navegador, prueba con otro </audio>
+    <script>
+      var audio = document.getElementById("reproductor");
+      audio.volume = 0.05;
+    </script>
+  </body>
+</html>
