@@ -38,6 +38,50 @@ body * {
     z-index: 1;
 }
 
+.barraDeTitulo {
+    position: absolute;
+    top: 0;
+    background-color: #0062AF;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-top: 1px solid teal;
+    border-left: 1px solid teal;
+    border-right: 1px solid teal;
+}
+
+.barraDeTitulo span {
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1rem;
+    color: #f2f2f2;
+    font-family: sans-serif;
+}
+.barraDeTitulo a i {
+    padding: .7rem 1.2rem;
+    font-size: .8rem;
+    color: #fff;
+}
+
+.fa-times:hover {
+    background-color: #E51126;    
+}
+
+.fa-times:active {
+    background-color: #89315C;    
+}
+
+.barraDeTitulo .fa-square:hover, 
+.barraDeTitulo .fa-window-minimize:hover {
+    background-color: #1A72B7;
+}
+
+.barraDeTitulo .fa-square:active, 
+.barraDeTitulo .fa-window-minimize:active {
+    background-color: #3384C5;
+}
+
 header img {
     height: 150px;    
     width: auto;
