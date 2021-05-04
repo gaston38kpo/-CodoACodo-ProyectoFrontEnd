@@ -82,27 +82,5 @@ input[type=search]:focus {
     height: 40px;
     font-size: 1.1rem;
 }
-/* input[type=submit]{
-    height: 40px;
-    width: 60px;
-    margin-left: 2px;
-    
-    background-color: #F7D964;
-    border: 2px solid #AE0505;
-    border-radius: 5px;
-    
-    color: #2B211C;
-    font-size: 1.4rem;
-    text-justify: auto;
-    
-    cursor: pointer;
-}
 
-input[type=submit]:hover {
-    text-shadow: 0 0 4px #ECEBE5;
-    color: #343F6E;
-    font-weight: 100;
-} */
-
-
-@media screen and (max-width: 800px){}
+/* @media screen and (max-width: 800px){} */
