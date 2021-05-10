@@ -1,4 +1,4 @@
-# Proyecto CaC
+# Proyecto CaC 📖
 
 _Proyecto web para Codo a Codo basado en una interfaz de sistema operativo simulada._
 
@@ -11,7 +11,7 @@ _Proyecto web para Codo a Codo basado en una interfaz de sistema operativo simul
 * [JavaScript](https://lenguajejs.com/) - Detalles logicos (no la gran cosa)
 * [Bootstrap](https://getbootstrap.com/) - Para el Popover!
 
-## Requisitos de aprobacion
+## Requisitos de aprobacion 📌
 
 * **5 HTML (al menos 1 Responsivo)** - La pagina cuenta con 5 htmls compatibles con todos los dispositivos .
 * **1 Form** - Aplicado completamente en _Windows CaC Messenger_ .
