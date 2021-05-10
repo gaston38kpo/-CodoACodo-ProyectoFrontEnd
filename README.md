@@ -34,7 +34,7 @@ Cualquier contribucion es bienvenida y analizada !
 ## Expresiones de Gratitud 🎁
 
 * Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
+* Invitame a una cerveza 🍺 o un café ☕.
 * Da las gracias públicamente 🤓.
 * etc.
 
