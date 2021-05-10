@@ -10,7 +10,7 @@ _Proyecto web para Codo a Codo basado en una interfaz de sistema operativo simul
 * [CSS3](https://lenguajecss.com/) - Todo bonito gracias al gran CSS3
 * [JavaScript](https://lenguajejs.com/) - Detalles logicos (no la gran cosa)
 * [Bootstrap](https://getbootstrap.com/) - Para el Popover!
-* [Muchas Ganas!!](https://media.giphy.com/media/FBzqZGthkW6KQ/giphy.gif) - Indispensable!
+* [Muchas Ganas!!](https://giphy.com/gifs/jean-claude-van-damme-dancing-FBzqZGthkW6KQ/fullscreen) - Indispensable!
 
 ## Requisitos de aprobacion 📌
 
