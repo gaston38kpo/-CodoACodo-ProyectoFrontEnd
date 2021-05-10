@@ -1,11 +1,44 @@
-# gaston38kpo.github.io
-Proyecto web para Codo a Codo basado en una interfaz de sistema operativo simulada.
-![image](https://user-images.githubusercontent.com/77559010/115817172-b3ccca80-a3d0-11eb-9221-be125ae9f3ee.png)
+# Proyecto CaC - Python 2021 Comision 2117 📖
 
-![image](https://user-images.githubusercontent.com/77559010/115817447-3eadc500-a3d1-11eb-9f5a-54f7a7bb1592.png)
+_Proyecto web para Codo a Codo basado en una interfaz de sistema operativo simulada._
 
-![image](https://user-images.githubusercontent.com/77559010/115817210-c8a95e00-a3d0-11eb-80fb-53e490861a6b.png)
+![image](https://user-images.githubusercontent.com/77559010/117723961-75e5e980-b1b9-11eb-8c3e-2028183cfa56.png)
 
-Y con un flamante soporte mobile!
+## Construido con 🛠️
 
-![image](https://user-images.githubusercontent.com/77559010/115817271-e1197880-a3d0-11eb-8cbb-1ccf9164ae0a.png) ![image](https://user-images.githubusercontent.com/77559010/115817284-eb3b7700-a3d0-11eb-9da6-087b8d3680ba.png) ![image](https://user-images.githubusercontent.com/77559010/115817249-d5c64d00-a3d0-11eb-89d7-b1bce758fe71.png)
+* [HTML5](https://lenguajehtml.com/) - La base de todo !
+* [CSS3](https://lenguajecss.com/) - Todo bonito gracias al gran CSS3
+* [JavaScript](https://lenguajejs.com/) - Detalles logicos (no la gran cosa)
+* [Bootstrap](https://getbootstrap.com/) - Para el Popover!
+* [Muchas Ganas!!](https://giphy.com/gifs/jean-claude-van-damme-dancing-FBzqZGthkW6KQ/fullscreen) - Indispensable!
+
+## Requisitos de aprobacion 📌
+
+* **5 HTML (al menos 1 Responsivo)** - La pagina cuenta con 5 htmls compatibles con todos los dispositivos .
+* **1 Form** - Aplicado completamente en _Windows CaC Messenger_ .
+* **1 iFrame** - La base de la _UI.HTML_ .
+* **Fuentes de Google** - Usadas en conjuntos con las fuentes base .
+* **1 animacion/transformacion/transicion** - Transiciones por doquier! .
+* **Flexbox o Grid** - Diseño 100% Flexbox .
+* **1 Componente de Bootstrap** - El popover crack! .
+
+## Contribuyendo 🖇️
+
+Cualquier contribucion es bienvenida y analizada !
+
+## Autor ✒️
+
+* **Gaston Giacobini** - *Trabajo Inicial* - [gaston38kpo](https://github.com/gaston38kpo)
+* **Compañeros de CaC** - *Tests & Tips* - [Discord](https://discord.gg/sg27tehP7w)
+
+## Expresiones de Gratitud 🎁
+
+* Comenta a otros sobre este proyecto 📢
+* Invitame a una cerveza 🍺 o un café ☕.
+* Da las gracias públicamente 🤓.
+* etc.
+
+
+
+---------------------
+Plantilla ⌨️ hecha con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
