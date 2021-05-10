@@ -43,7 +43,8 @@ h1 {
     text-shadow: 1px 1px 3px black;
 }
 i {
-    text-shadow: 2px 3px black;
+    text-shadow: 2px 3px 3px black;
+    color: #627784e9;
 }
 
     /* ----Todo dentro del BODY---- */
@@ -68,7 +69,6 @@ form div {
 }
 
 input {
-    /* margin: 3px 0; */
     height: 35px;
 }
 
