@@ -1,11 +1,10 @@
 # gaston38kpo.github.io
 Proyecto web para Codo a Codo basado en una interfaz de sistema operativo simulada.
-![image](https://user-images.githubusercontent.com/77559010/115817172-b3ccca80-a3d0-11eb-9221-be125ae9f3ee.png)
+![image](https://user-images.githubusercontent.com/77559010/117723961-75e5e980-b1b9-11eb-8c3e-2028183cfa56.png)
 
-![image](https://user-images.githubusercontent.com/77559010/115817447-3eadc500-a3d1-11eb-9f5a-54f7a7bb1592.png)
-
-![image](https://user-images.githubusercontent.com/77559010/115817210-c8a95e00-a3d0-11eb-80fb-53e490861a6b.png)
+![image](https://user-images.githubusercontent.com/77559010/117724046-931ab800-b1b9-11eb-9eb5-44f8eda8befa.png)
 
 Y con un flamante soporte mobile!
 
-![image](https://user-images.githubusercontent.com/77559010/115817271-e1197880-a3d0-11eb-8cbb-1ccf9164ae0a.png) ![image](https://user-images.githubusercontent.com/77559010/115817284-eb3b7700-a3d0-11eb-9da6-087b8d3680ba.png) ![image](https://user-images.githubusercontent.com/77559010/115817249-d5c64d00-a3d0-11eb-89d7-b1bce758fe71.png)
+![image](https://user-images.githubusercontent.com/77559010/117724463-29e77480-b1ba-11eb-9123-5423649f358e.png) ![image](https://user-images.githubusercontent.com/77559010/117724512-41bef880-b1ba-11eb-8b63-ca2cee54aede.png)
+
