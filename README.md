@@ -1,5 +1,7 @@
 # gaston38kpo.github.io
 Proyecto web para Codo a Codo basado en una interfaz de sistema operativo simulada.
+url: https://gastongiacobini-proyecto.netlify.app/
+
 ![image](https://user-images.githubusercontent.com/77559010/117723961-75e5e980-b1b9-11eb-8c3e-2028183cfa56.png)
 
 ![image](https://user-images.githubusercontent.com/77559010/117724046-931ab800-b1b9-11eb-9eb5-44f8eda8befa.png)
