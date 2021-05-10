@@ -29,7 +29,7 @@ Cualquier contribucion es bienvenida y analizada !
 ## Autor ✒️
 
 * **Gaston Giacobini** - *Trabajo Inicial* - [gaston38kpo](https://github.com/gaston38kpo)
-* **Compañeros de CaC** - *Tests & Tips* - [Discord](https://discord.gg/GNDT4jaj)
+* **Compañeros de CaC** - *Tests & Tips* - [Discord](https://discord.gg/sg27tehP7w)
 
 ## Expresiones de Gratitud 🎁
 
