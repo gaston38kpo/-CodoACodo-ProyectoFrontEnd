@@ -26,10 +26,6 @@ _Proyecto web para Codo a Codo basado en una interfaz de sistema operativo simul
 
 Cualquier contribucion es bienvenida y analizada !
 
-## Versionado 📌
-
-Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/gaston38kpo/gaston38kpo.github.io/tags).
-
 ## Autor ✒️
 
 * **Gaston Giacobini** - *Trabajo Inicial* - [gaston38kpo](https://github.com/gaston38kpo)
