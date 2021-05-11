@@ -30,10 +30,10 @@ nav {
     width: 110px;
 }
 
-
 .taskbarBox a div{
     margin-top: 15px;
 }
+
 .taskbarBox p {
     color: white;
 }
@@ -42,13 +42,12 @@ nav {
     text-shadow: 0 0 1px black;
 }
 
-.fa-trash {
-    color: #E5EBEE;
-    /* margin-top: 10px; */
+.fa-door-open {
+    color: lightskyblue;
 }
 
-.fa-desktop {
-    color: #868E95;
+.fa-github-alt {
+    color: #F8F8F8;
 }
 
 .fa-folder-open {
