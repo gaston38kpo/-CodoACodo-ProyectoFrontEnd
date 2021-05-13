@@ -181,10 +181,13 @@ footer a:visited {color: #4b4b4b;}
     /* ////////////////////////////////////// */
 
     body {
+        height: 100vh
+        ;
         display: flex;
-        text-align: center;
         align-items: center;
-        
+        justify-content: center;
+
+        text-align: center;
         font-size: 1rem;
     }
 
