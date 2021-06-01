@@ -21,7 +21,11 @@ a {
 .taskbar {
     background-color: #002C4F;
 }
-
+@media only screen and (max-width: 425px) {
+    .taskbar {
+        overflow: auto;
+    }
+}
 .taskbarBox {
     display: flex;
 }
