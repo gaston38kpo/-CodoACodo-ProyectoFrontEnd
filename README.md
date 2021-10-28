@@ -34,7 +34,7 @@ Cualquier contribucion es bienvenida y analizada !
 ## Expresiones de Gratitud 🎁
 
 * Comenta a otros sobre este proyecto 📢
-* Invitame a una cerveza 🍺 o un café ☕.
+* Invitame a una cerveza 🍺 o un café ☕ Alias CVU: GASTON38KPO.UALA
 * Da las gracias públicamente 🤓.
 * etc.
 
