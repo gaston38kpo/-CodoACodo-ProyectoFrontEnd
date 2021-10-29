@@ -34,7 +34,10 @@ Cualquier contribucion es bienvenida y analizada !
 ## Expresiones de Gratitud 🎁
 
 * Comenta a otros sobre este proyecto 📢
-* Invitame a una cerveza 🍺 o un café ☕ Alias transferencia: GASTON38KPO.UALA
+* Invitame a una cerveza 🍺 o un café ☕ 
+(CVU: 0000007900203661805841
+Alias: GASTON38KPO.UALA
+CUIT: 20366180584)
 * Da las gracias públicamente 🤓.
 * etc.
 
