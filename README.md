@@ -1,6 +1,6 @@
 # Proyecto CaC - Python 2021 Comision 2117 📖
 
-_Proyecto web para Codo a Codo basado en una interfaz de sistema operativo simulada._
+_Proyecto web FrontEnd para Codo a Codo basado en una interfaz de sistema operativo simulada._
 
 ![image](https://user-images.githubusercontent.com/77559010/117723961-75e5e980-b1b9-11eb-8c3e-2028183cfa56.png)
 
